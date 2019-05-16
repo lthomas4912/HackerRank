@@ -7,16 +7,19 @@ import java.util.*;
 public class HackerRankJavaIfElse {
 
     public static void main(String[] args) {
+        weirdNotWeird(10);
+    }
 
+    static void weirdNotWeird(int num){
         Scanner scanner = new Scanner(System.in);
 
-        int N = scanner.nextInt();
+         num = scanner.nextInt();
 
-        if (N % 2 == 1) {
+        if (num % 2 == 1) {
             System.out.println("Weird");
-        } else if (N % 2 == 0 && N >= 2 && N <= 5) {
+        } else if (num % 2 == 0 && num >= 2 && num <= 5) {
             System.out.println("Not Weird");
-        } else if (N % 2 == 0 && N > 6 && N < 20) {
+        } else if (num % 2 == 0 && num > 6 && num < 20) {
             System.out.println("Weird");
         } else {
             System.out.print("Not Weird");
